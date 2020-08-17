@@ -1,0 +1,16 @@
+<view class="connect">
+    <view class="content">
+        <view class="formitem wifiname">
+            <input type="text" placeholder="wifi名称" bindinput="onWifiName" value="{{wifiName}}"/>
+        </view>
+        <view class="formitem password">
+            <input type="text" placeholder="密码" bindinput="onPassword" value="{{password}}"/>
+        </view>
+        <view class="formitem submit">
+            <button type="primary" size="mini" bindtap="onSubmit">提交</button>
+        </view>
+        <view class="wifiInfo">
+            <button type="primary" size="mini" bindtap="_isConnected">获取wifi状态</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="blueFl">
+    <view>
+        <button type="primary" size="mini" bindtap="bindOpenBLueFl">打开蓝牙</button>  
+    </view>
+
+    <scroll-view scroll-y class="devices">
+        <view class="device" wx:for="{{devices}}" bindtap="bindConnectDevice" data-item="{{item}}" wx:key="index">
+            {{item.name || '无名称设备'}}
+        </view>
+    </scroll-view>
+</view>
